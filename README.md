@@ -38,10 +38,10 @@ curl -i -X POST -d '{"name":"C-3PO","type":"droid","year":1977}' http://example.
 ### Редактирование робота
 1. Url: http://example.com/api/robots
 2. Method: PUT
-3. Data: {"name":"Название робота","type":"Тип робота","year":Год создания}
+3. Data: {"id": "ID робота","name":"Название робота","type":"Тип робота","year":Год создания}
 
 Пример
-curl -i -X PUT -d '{"name":"ASIMO","type":"humanoid","year":2000}' http://example.com/api/robots/4
+curl -i -X PUT -d '{"id": 1, "name":"ASIMO","type":"humanoid","year":2000}' http://example.com/api/robots/4
 
 ### Удаление робота
 1. Url: http://example.com/api/robots/:id
